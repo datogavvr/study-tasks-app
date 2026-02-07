@@ -21,6 +21,7 @@ import androidx.compose.material.icons.filled.TaskAlt
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -33,10 +34,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.theme.Blue
 import com.practicum.studytasks.ui.theme.Green
 import com.practicum.studytasks.ui.theme.Peach
 import com.practicum.studytasks.ui.theme.Purple
+import com.practicum.studytasks.ui.theme.StudyTasksTheme
 
 @Composable
 fun StatsGrid(
@@ -50,7 +51,7 @@ fun StatsGrid(
             StatCard(
                 title = stringResource(R.string.total_tasks),
                 value = countTasks.toString(),
-                color = Blue,
+                color = MaterialTheme.colorScheme.primary,
                 icon = Icons.Default.Task,
                 modifier = Modifier.weight(1f)
             )
@@ -105,7 +106,7 @@ private fun StatCard(
                 modifier = Modifier
                     .size(dimensionResource(R.dimen.small_icon_background_size))
                     .background(
-                        color = Color.White.copy(alpha = 0.2f),
+                        color = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.2f),
                         shape = RoundedCornerShape(dimensionResource(R.dimen.small_rounded_corner))
                     ),
                 contentAlignment = Alignment.Center
@@ -113,14 +114,14 @@ private fun StatCard(
                 Icon(
                     imageVector = icon,
                     contentDescription = title,
-                    tint = Color.White,
+                    tint = MaterialTheme.colorScheme.onPrimary,
                     modifier = Modifier.size(dimensionResource(R.dimen.small_icon_size))
                 )
             }
 
             Text(
                 text = title,
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onPrimary,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold
             )
@@ -128,7 +129,7 @@ private fun StatCard(
             Text(
                 text = value,
                 modifier = Modifier.fillMaxWidth(),
-                color = Color.White,
+                color = MaterialTheme.colorScheme.onPrimary,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.SemiBold,
                 textAlign = TextAlign.End
@@ -140,11 +141,13 @@ private fun StatCard(
 @Preview(showSystemUi = true, locale = "ru")
 @Composable
 fun StatsGridPreview() {
-    Column(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        Spacer(modifier = Modifier.weight(0.25f))
-        StatsGrid(17, 5, 12, 8)
-        Spacer(modifier = Modifier.weight(0.75f))
+    StudyTasksTheme {
+        Column(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Spacer(modifier = Modifier.weight(0.25f))
+            StatsGrid(17, 5, 12, 8)
+            Spacer(modifier = Modifier.weight(0.75f))
+        }
     }
 }

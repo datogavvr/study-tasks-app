@@ -1,26 +1,26 @@
-package com.practicum.studytasks.ui.home.components
+package com.practicum.studytasks.ui.ui_components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
-import com.practicum.studytasks.R
 
 @Composable
-fun Header() {
+fun Header(
+    title: String,
+    subtitle: String
+) {
     Column {
         Text(
-            text = stringResource(R.string.home),
-            color = Color.Black,
+            text = title,
+            color = MaterialTheme.colorScheme.onBackground,
             style = MaterialTheme.typography.headlineMedium,
             fontWeight = FontWeight.Bold
         )
         Text(
-            "2 курс, 2 семестр", // добавить отслеживание семестра
-            color = Color.Gray
+            text = subtitle, // добавить отслеживание семестра
+            color = MaterialTheme.colorScheme.onSurfaceVariant
         )
     }
 }

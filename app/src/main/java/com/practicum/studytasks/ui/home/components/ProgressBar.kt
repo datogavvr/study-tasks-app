@@ -16,27 +16,28 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.theme.Blue
+import com.practicum.studytasks.ui.theme.StudyTasksTheme
 
 @Composable
 fun ProgressBar(
     progress: Int
 ) {
     Card(
-        colors = CardDefaults.cardColors(Color.White),
+        colors = CardDefaults.cardColors(MaterialTheme.colorScheme.surface),
         border = BorderStroke(
             width = dimensionResource(R.dimen.card_border_width),
-            color = Color.LightGray
+            color = MaterialTheme.colorScheme.outline
         )
     ) {
         Column(modifier = Modifier.padding(dimensionResource(id = R.dimen.card_inner_padding))) {
@@ -48,9 +49,13 @@ fun ProgressBar(
                     imageVector = Icons.AutoMirrored.Filled.ShowChart,
                     contentDescription = stringResource(R.string.progress),
                     modifier = Modifier.size(dimensionResource(R.dimen.small_icon_size)),
-                    tint = Blue
+                    tint = MaterialTheme.colorScheme.primary
                 )
-                Text(text = stringResource(R.string.progress), fontWeight = FontWeight.SemiBold)
+                Text(
+                    text = stringResource(R.string.progress),
+                    color = MaterialTheme.colorScheme.onSurface,
+                    fontWeight = FontWeight.SemiBold
+                )
             }
             Spacer(Modifier.height(dimensionResource(R.dimen.progressbar_header_padding)))
             LinearProgressIndicator(
@@ -58,23 +63,39 @@ fun ProgressBar(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(dimensionResource(R.dimen.progressbar_line_height)),
-                color = Color.Black,
-                trackColor = Color.LightGray
+                color = MaterialTheme.colorScheme.primary,
+                trackColor = MaterialTheme.colorScheme.tertiary.copy(alpha = 0.3f)
             )
             Spacer(Modifier.height(dimensionResource(R.dimen.progressbar_content_padding)))
-            Text(text = stringResource(R.string.progress_value, progress), color = Color.Gray)
+            Text(text = stringResource(R.string.progress_value, progress), color = MaterialTheme.colorScheme.onSurfaceVariant)
         }
     }
 }
 
 @Preview(showSystemUi = true, locale = "ru")
 @Composable
-fun ProgressBarPreview() {
-    Column(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        Spacer(modifier = Modifier.weight(0.25f))
-        ProgressBar(29)
-        Spacer(modifier = Modifier.weight(0.75f))
+fun ProgressBarLightPreview() {
+    StudyTasksTheme {
+        Column(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Spacer(modifier = Modifier.weight(0.25f))
+            ProgressBar(29)
+            Spacer(modifier = Modifier.weight(0.75f))
+        }
+    }
+}
+
+@Preview(showSystemUi = true, locale = "ru", uiMode = UI_MODE_NIGHT_YES)
+@Composable
+fun ProgressBarDarkPreview() {
+    StudyTasksTheme {
+        Column(
+            modifier = Modifier.fillMaxSize()
+        ) {
+            Spacer(modifier = Modifier.weight(0.25f))
+            ProgressBar(29)
+            Spacer(modifier = Modifier.weight(0.75f))
+        }
     }
 }
