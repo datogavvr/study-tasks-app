@@ -46,7 +46,7 @@ internal fun NumberOfTasksRow() {
 
             Text(
                 text = stringResource(R.string.dash),
-                modifier = Modifier.padding(horizontal = dimensionResource(R.dimen.between_cards_padding)),
+                modifier = Modifier.padding(horizontal = dimensionResource(R.dimen.small_between_cards_padding)),
                 color = MaterialTheme.colorScheme.onSurface
             )
 

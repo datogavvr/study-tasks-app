@@ -46,8 +46,8 @@ fun StatsGrid(
     countInProgressTasks: Int,
     countSubjects: Int
 ) {
-    Column(verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.between_cards_padding))) {
-        Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.between_cards_padding))) {
+    Column(verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.small_between_cards_padding))) {
+        Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.small_between_cards_padding))) {
             StatCard(
                 title = stringResource(R.string.total_tasks),
                 value = countTasks.toString(),
@@ -63,7 +63,7 @@ fun StatsGrid(
                 modifier = Modifier.weight(1f)
             )
         }
-        Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.between_cards_padding))) {
+        Row(horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.small_between_cards_padding))) {
             StatCard(
                 title = stringResource(R.string.uncompleted_tasks),
                 value = countInProgressTasks.toString(),
@@ -99,7 +99,7 @@ private fun StatCard(
     ) {
         Row(
             modifier = Modifier.padding(dimensionResource(R.dimen.stat_card_content_padding)),
-            horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.large_icon_text_padding)),
+            horizontalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.small_icon_text_padding)),
             verticalAlignment = Alignment.CenterVertically
         ) {
             Box(

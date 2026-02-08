@@ -44,7 +44,7 @@ import com.practicum.studytasks.ui.theme.StudyTasksTheme
 fun UpcomingTasks() {
     Column(
         modifier = Modifier.fillMaxWidth(),
-        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.between_cards_padding))
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.small_between_cards_padding))
     ) {
         Text(
             stringResource(R.string.upcoming_tasks),

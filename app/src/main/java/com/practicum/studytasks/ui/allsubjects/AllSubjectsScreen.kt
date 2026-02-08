@@ -48,7 +48,7 @@ fun AllSubjectsScreen(
 
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.between_cards_padding))
+            verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.small_between_cards_padding))
         ) {
             items(subjects) { item ->
                 val total = item[2] as Int
@@ -65,7 +65,7 @@ fun AllSubjectsScreen(
                     color = item[4] as Color
                 )
             }
-            item { Spacer(modifier = Modifier.height(dimensionResource(R.dimen.between_cards_padding))) }
+            item { Spacer(modifier = Modifier.height(dimensionResource(R.dimen.small_between_cards_padding))) }
         }
     }
 }

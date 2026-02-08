@@ -60,7 +60,7 @@ fun CustomDropdown(
     ) {
         Column {
             Row(
-                modifier = Modifier.padding(dimensionResource(R.dimen.dropdown_inner_padding)),
+                modifier = Modifier.padding(dimensionResource(R.dimen.input_field_inner_padding)),
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(

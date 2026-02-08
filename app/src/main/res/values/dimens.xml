@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_inner_padding">6dp</dimen>
+    <dimen name="card_border_width">0.5dp</dimen>
+
+    <dimen name="small_between_cards_padding">6dp</dimen>
+    <dimen name="large_between_cards_padding">12dp</dimen>
+
+    <dimen name="small_icon_size">24dp</dimen>
+    <dimen name="small_icon_background_size">32dp</dimen>
+    <dimen name="medium_icon_size">26dp</dimen>
+    <dimen name="medium_icon_background_size">40dp</dimen>
+    <dimen name="large_icon_size">40dp</dimen>
+    <dimen name="large_icon_background_size">40dp</dimen>
+
+    <dimen name="small_icon_text_padding">6dp</dimen>
+    <dimen name="medium_icon_text_padding">8dp</dimen>
+    <dimen name="large_icon_text_padding">12dp</dimen>
+
+    <dimen name="small_rounded_corner">8dp</dimen>
+    <dimen name="medium_rounded_corner">16dp</dimen>
+    <dimen name="large_rounded_corner">28dp</dimen>
+
+    <dimen name="small_between_header_content_padding">8dp</dimen>
+    <dimen name="medium_between_header_content_padding">12dp</dimen>
+    <dimen name="large_between_header_content_padding">16dp</dimen>
+
+    <!-- Home screen -->
+    <dimen name="home_screen_inner_padding">8dp</dimen>
+    <dimen name="home_screen_blocks_padding">16dp</dimen>
+    <dimen name="stat_card_height">90dp</dimen>
+    <dimen name="stat_card_content_padding">16dp</dimen>
+    <dimen name="progressbar_header_padding">8dp</dimen>
+    <dimen name="progressbar_content_padding">4dp</dimen>
+    <dimen name="progressbar_line_height">6dp</dimen>
+    <dimen name="no_description_task_card_height">70dp</dimen>
+    <dimen name="task_card_inner_padding">8dp</dimen>
+    <dimen name="task_card_between_content_padding">6dp</dimen>
+    <dimen name="task_card_line_width">4dp</dimen>
+    <dimen name="text_background_padding">8dp</dimen>
+
+    <!-- Subjects screen -->
+    <dimen name="subject_card_inner_padding">16dp</dimen>
+    <dimen name="subject_card_content_padding">8dp</dimen>
+
+    <!-- Bottom bar -->
+    <dimen name="bottom_bar_height">56dp</dimen>
+    <dimen name="add_task_button_size">56dp</dimen>
+
+    <!-- Add task dialog -->
+    <dimen name="input_field_height">56dp</dimen>
+    <!-- Dropdown -->
+    <dimen name="input_field_inner_padding">14dp</dimen>
+    <dimen name="dropdown_horizontal_padding">14dp</dimen>
+    <dimen name="dropdown_vertical_padding">12dp</dimen>
+    <!-- Deadline -->
+    <!-- Add files -->
+    <dimen name="cancel_button_size">42dp</dimen>
+    <dimen name="add_file_button_size">100dp</dimen>
+
+    <!-- Dialogs -->
+    <dimen name="dialog_horizontal_outer_padding">16dp</dimen>
+    <dimen name="dialog_vertical_outer_padding">8dp</dimen>
+    <dimen name="dialog_inner_padding">20dp</dimen>
+
+</resources>
