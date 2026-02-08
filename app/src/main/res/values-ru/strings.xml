@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StudyTasks</string>
+    <string name="home">Главная</string>
+    <string name="schedule">Расписание</string>
+    <string name="subjects">Предметы</string>
+    <string name="tasks">Задачи</string>
+    <string name="add_task">Добавить задачу</string>
+    <string name="total_tasks">Всего задач</string>
+    <string name="completed_tasks">Готово</string>
+    <string name="uncompleted_tasks">В работе</string>
+    <string name="total_subjects">Предметов</string>
+    <string name="progress">Прогресс выполнения</string>
+    <string name="progress_value">Завершено задач %d%%</string>
+    <string name="upcoming_tasks">Ближайшие задачи</string>
+    <string name="deadline">" • %s"</string>
+    <string name="close">Закрыть</string>
+    <string name="subject">Предмет</string>
+    <string name="select_variant">Выбрать вариант</string>
+    <string name="not_selected_variant">Не выбран</string>
+    <string name="set_deadline">Установить дедлайн</string>
+    <string name="select_date">Выберите дату</string>
+    <string name="files">Файлы</string>
+    <string name="add_file">Добавить файл</string>
+    <string name="rename_file">Переименовать файл</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="already_added_file">Этот файл уже добавлен в список</string>
+    <string name="description">Описание</string>
+    <string name="description_hint">Добавьте детали или заметки</string>
+    <string name="number_of_tasks">Количество задач</string>
+    <string name="task_numbers">Номера задач:</string>
+    <string name="from">От</string>
+    <string name="to">До</string>
+    <string name="create_task">Создать задачу</string>
+    <string name="subject_completed_tasks">Выполнено: %d/%d</string>
+    <string name="subject_progress_value">Прогресс %d%%</string>
+    <string name="task_title">Название задачи</string>
+    <string name="enter_title">Введите название</string>
+    <string name="task_type">Тип задачи</string>
+</resources>

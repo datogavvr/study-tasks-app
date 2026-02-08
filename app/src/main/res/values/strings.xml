@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">StudyTasks</string>
+    <string name="home">Home</string>
+    <string name="schedule">Schedule</string>
+    <string name="subjects">Subjects</string>
+    <string name="tasks">Tasks</string>
+    <string name="add_task">Add task</string>
+
+    <!-- Home screen -->
+    <!-- Stats grid -->
+    <string name="total_tasks">Total tasks</string>
+    <string name="completed_tasks">Completed</string>
+    <string name="uncompleted_tasks">Uncompleted</string>
+    <string name="total_subjects">Subjects</string>
+    <!-- Progress bar -->
+    <string name="progress">Progress</string>
+    <string name="progress_value">Completed tasks %d%%</string>
+    <!-- Upcoming tasks -->
+    <string name="upcoming_tasks">Upcoming tasks</string>
+    <string name="deadline"> • %s</string>
+
+    <!-- Add task -->
+    <string name="close">Close</string>
+    <!-- Title -->
+    <string name="task_title">Task title</string>
+    <string name="enter_title">Enter the title</string>
+    <!-- Task type -->
+    <string name="task_type">Task type</string>
+    <!-- Subject -->
+    <string name="subject">Subject</string>
+    <!-- Dropdown -->
+    <string name="select_variant">Select variant</string>
+    <string name="not_selected_variant">Not selected</string>
+    <!-- Deadline -->
+    <string name="set_deadline">Set deadline</string>
+    <string name="select_date">Select a date</string>
+    <!-- Add file -->
+    <string name="files">Files</string>
+    <string name="add_file">Add file</string>
+    <string name="rename_file">Rename file</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="already_added_file">This file has already been added</string>
+    <!-- Description -->
+    <string name="description">Description</string>
+    <string name="description_hint">Add details or notes</string>
+    <!-- Multiple tasks -->
+    <string name="number_of_tasks">Number of tasks</string>
+    <string name="task_numbers">Task numbers:</string>
+    <string name="from">From</string>
+    <string name="dash" translatable="false">-</string>
+    <string name="to">To</string>
+    <!-- Bottom button -->
+    <string name="create_task">Create task</string>
+
+    <!-- Subjects screen -->
+    <string name="subject_completed_tasks">Completed: %d/%d</string>
+    <string name="subject_progress_value">Progress %d%%</string>
+
+</resources>
