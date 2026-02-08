@@ -10,7 +10,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.navigation.compose.rememberNavController
 import com.practicum.studytasks.ui.theme.StudyTasksTheme
-import com.practicum.studytasks.ui.addtask.AddTaskDialog
+import com.practicum.studytasks.ui.addtask.screen.AddTaskDialog
 import com.practicum.studytasks.ui.ui_components.BottomBar
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")

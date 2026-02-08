@@ -2,6 +2,7 @@
 activityComposeVersion = "1.12.0"
 agp = "8.13.1"
 androidxCoreKtx = "1.12.0"
+coilCompose = "2.7.0"
 coreKtxVersion = "1.17.0"
 kotlin = "2.2.21"
 coreKtx = "1.17.0"
@@ -20,6 +21,9 @@ ui = "1.9.5"
 runtimeSaveable = "1.9.5"
 foundationLayout = "1.10.2"
 runtime = "1.10.2"
+animation = "1.10.2"
+uiVersion = "1.10.2"
+foundation = "1.10.2"
 
 [libraries]
 androidx-activity-compose-v180 = { module = "androidx.activity:activity-compose", version.ref = "activityComposeVersion" }
@@ -35,6 +39,7 @@ androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref =
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomCompiler" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomCompiler" }
 androidx-ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -53,6 +58,9 @@ kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serializa
 androidx-compose-runtime-saveable = { group = "androidx.compose.runtime", name = "runtime-saveable", version.ref = "runtimeSaveable" }
 androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout", version.ref = "foundationLayout" }
 androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "runtime" }
+androidx-compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "animation" }
+ui = { group = "androidx.compose.ui", name = "ui", version.ref = "uiVersion" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "foundation" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
