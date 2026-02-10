@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.allsubjects
+package com.practicum.studytasks.ui.allsubjects.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,7 +17,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.allsubjects.components.SubjectCard
+import com.practicum.studytasks.ui.allsubjects.SubjectCard
 import com.practicum.studytasks.ui.theme.Blue
 import com.practicum.studytasks.ui.theme.Green
 import com.practicum.studytasks.ui.theme.Peach
@@ -27,8 +27,7 @@ import com.practicum.studytasks.ui.theme.StudyTasksTheme
 import com.practicum.studytasks.ui.ui_components.Header
 
 @Composable
-fun AllSubjectsScreen(
-) {
+fun AllSubjectsScreen() {
     val subjects = listOf(
         listOf("Математический анализ", "Харламов Г.М.", 5, 1, Blue),
         listOf("Программирование", "Благовещенский И.Г.", 5, 2, Purple),
@@ -39,7 +38,6 @@ fun AllSubjectsScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = dimensionResource(R.dimen.home_screen_inner_padding))
             .padding(horizontal = dimensionResource(R.dimen.home_screen_inner_padding)),
         verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.home_screen_blocks_padding)),
         horizontalAlignment = Alignment.Start

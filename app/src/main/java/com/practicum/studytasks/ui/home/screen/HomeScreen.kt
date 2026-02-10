@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.home
+package com.practicum.studytasks.ui.home.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,9 +12,9 @@ import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
 import com.practicum.studytasks.ui.ui_components.Header
-import com.practicum.studytasks.ui.home.components.ProgressBar
-import com.practicum.studytasks.ui.home.components.StatsGrid
-import com.practicum.studytasks.ui.home.components.UpcomingTasks
+import com.practicum.studytasks.ui.home.ProgressBar
+import com.practicum.studytasks.ui.home.StatsGrid
+import com.practicum.studytasks.ui.home.UpcomingTasks
 import com.practicum.studytasks.ui.theme.StudyTasksTheme
 
 @Composable
@@ -34,7 +34,7 @@ fun HomeScreen() {
 
 @Preview(showBackground = true, locale = "ru")
 @Composable
-fun HomeScreenLightPreview() {
+private fun HomeScreenLightPreview() {
     StudyTasksTheme {
         HomeScreen()
     }
@@ -42,7 +42,7 @@ fun HomeScreenLightPreview() {
 
 @Preview(showBackground = true, backgroundColor = 0, locale = "ru", uiMode = UI_MODE_NIGHT_YES)
 @Composable
-fun HomeScreenDarkPreview() {
+private fun HomeScreenDarkPreview() {
     StudyTasksTheme {
         HomeScreen()
     }
