@@ -13,6 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
@@ -41,7 +42,8 @@ internal fun NumberOfTasksRow() {
                 modifier = Modifier
                     .height(dimensionResource(R.dimen.input_field_height))
                     .aspectRatio(6f / 5f),
-                placeholder = stringResource(R.string.from)
+                placeholder = stringResource(R.string.from),
+                keyboardType = KeyboardType.Number
             )
 
             Text(
@@ -54,7 +56,8 @@ internal fun NumberOfTasksRow() {
                 modifier = Modifier
                     .height(dimensionResource(R.dimen.input_field_height))
                     .aspectRatio(6f / 5f),
-                placeholder = stringResource(R.string.to)
+                placeholder = stringResource(R.string.to),
+                keyboardType = KeyboardType.Number
             )
         }
     }

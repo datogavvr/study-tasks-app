@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -18,6 +19,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
@@ -30,6 +32,7 @@ fun CustomTextField(
     @SuppressLint("ModifierParameter") modifier: Modifier = Modifier,
     placeholder: String = "",
     singleLine: Boolean = true,
+    keyboardType: KeyboardType = KeyboardType.Text,
 ) {
     var textValue by remember { mutableStateOf(value) }
 
@@ -52,8 +55,9 @@ fun CustomTextField(
                             },
             modifier = Modifier.fillMaxWidth(),
             placeholder = { Text(placeholder) },
-            shape = RoundedCornerShape(dimensionResource(R.dimen.medium_rounded_corner)),
             singleLine = singleLine,
+            keyboardOptions = KeyboardOptions.Default.copy(keyboardType = keyboardType),
+            shape = RoundedCornerShape(dimensionResource(R.dimen.medium_rounded_corner)),
             colors = TextFieldDefaults.colors(
                 focusedTextColor = MaterialTheme.colorScheme.onSurface,
                 unfocusedTextColor = MaterialTheme.colorScheme.onSurface,
