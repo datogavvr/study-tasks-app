@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.home.components
+package com.practicum.studytasks.ui.home
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
@@ -30,7 +30,7 @@ import com.practicum.studytasks.R
 import com.practicum.studytasks.ui.theme.StudyTasksTheme
 
 @Composable
-fun ProgressBar(
+internal fun ProgressBar(
     progress: Int
 ) {
     Card(
@@ -74,7 +74,7 @@ fun ProgressBar(
 
 @Preview(showSystemUi = true, locale = "ru")
 @Composable
-fun ProgressBarLightPreview() {
+private fun ProgressBarLightPreview() {
     StudyTasksTheme {
         Column(
             modifier = Modifier.fillMaxSize()
@@ -88,7 +88,7 @@ fun ProgressBarLightPreview() {
 
 @Preview(showSystemUi = true, locale = "ru", uiMode = UI_MODE_NIGHT_YES)
 @Composable
-fun ProgressBarDarkPreview() {
+private fun ProgressBarDarkPreview() {
     StudyTasksTheme {
         Column(
             modifier = Modifier.fillMaxSize()

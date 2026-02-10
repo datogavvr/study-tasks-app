@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.home.components
+package com.practicum.studytasks.ui.home
 
 import androidx.compose.foundation.background
 import androidx.compose.ui.graphics.Color
@@ -40,7 +40,7 @@ import com.practicum.studytasks.ui.theme.Purple
 import com.practicum.studytasks.ui.theme.StudyTasksTheme
 
 @Composable
-fun StatsGrid(
+internal fun StatsGrid(
     countTasks: Int,
     countDoneTasks: Int,
     countInProgressTasks: Int,
@@ -140,7 +140,7 @@ private fun StatCard(
 
 @Preview(showSystemUi = true, locale = "ru")
 @Composable
-fun StatsGridPreview() {
+private fun StatsGridPreview() {
     StudyTasksTheme {
         Column(
             modifier = Modifier.fillMaxSize()

@@ -10,8 +10,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.practicum.studytasks.ui.allsubjects.AllSubjectsScreen
-import com.practicum.studytasks.ui.home.HomeScreen
+import com.practicum.studytasks.ui.allsubjects.screen.AllSubjectsScreen
+import com.practicum.studytasks.ui.home.screen.HomeScreen
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable

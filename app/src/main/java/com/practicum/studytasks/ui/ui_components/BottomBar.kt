@@ -140,7 +140,7 @@ private fun BottomItem(icon: ImageVector, label: String, onClick: () -> Unit = {
 
 @Preview(showSystemUi = true, locale = "ru")
 @Composable
-fun BottomBarLightPreview() {
+private fun BottomBarLightPreview() {
     StudyTasksTheme {
         Column(
             modifier = Modifier.fillMaxSize()
@@ -153,7 +153,7 @@ fun BottomBarLightPreview() {
 
 @Preview(showSystemUi = true, locale = "ru", uiMode = UI_MODE_NIGHT_YES)
 @Composable
-fun BottomBarDarkPreview() {
+private fun BottomBarDarkPreview() {
     StudyTasksTheme {
         Column(
             modifier = Modifier.fillMaxSize()

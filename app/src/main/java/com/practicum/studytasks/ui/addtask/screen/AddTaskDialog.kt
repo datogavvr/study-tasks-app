@@ -254,7 +254,7 @@ private fun AddTaskDialogContent(
 
 @Preview(showBackground = true, locale = "ru")
 @Composable
-fun AddTaskDialogLightPreview() {
+private fun AddTaskDialogLightPreview() {
     StudyTasksTheme {
         AddTaskDialog {}
     }
@@ -262,7 +262,7 @@ fun AddTaskDialogLightPreview() {
 
 @Preview(showBackground = true, backgroundColor = 0, locale = "ru", uiMode = UI_MODE_NIGHT_YES)
 @Composable
-fun AddTaskDialogDarkPreview() {
+private fun AddTaskDialogDarkPreview() {
     StudyTasksTheme {
         AddTaskDialog {}
     }

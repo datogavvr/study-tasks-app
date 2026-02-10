@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.home.components
+package com.practicum.studytasks.ui.home
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -41,7 +41,7 @@ import com.practicum.studytasks.ui.theme.Red
 import com.practicum.studytasks.ui.theme.StudyTasksTheme
 
 @Composable
-fun UpcomingTasks() {
+internal fun UpcomingTasks() {
     Column(
         modifier = Modifier.fillMaxWidth(),
         verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.small_between_cards_padding))

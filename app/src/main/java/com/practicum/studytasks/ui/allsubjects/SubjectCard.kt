@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.allsubjects.components
+package com.practicum.studytasks.ui.allsubjects
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -40,7 +40,7 @@ import com.practicum.studytasks.R
 import com.practicum.studytasks.ui.theme.StudyTasksTheme
 
 @Composable
-fun SubjectCard(
+internal fun SubjectCard(
     title: String,
     teacher: String,
     total: Int,
