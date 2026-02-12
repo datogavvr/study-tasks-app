@@ -34,8 +34,11 @@ import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
 import com.practicum.studytasks.ui.theme.StudyTasksTheme
+import java.lang.System.currentTimeMillis
 import java.text.SimpleDateFormat
-import java.util.Calendar
+import java.time.LocalDate
+import java.time.LocalTime
+import java.time.ZoneOffset
 import java.util.Date
 import java.util.Locale
 
@@ -49,17 +52,18 @@ internal fun CustomDatePicker(
     var showDatePicker by remember { mutableStateOf(false) }
 
     // create today's date
-    val calendar = Calendar.getInstance()
-    val todayMillis = calendar.timeInMillis
+    val todayMillis = currentTimeMillis()
+    val todayDate = LocalDate.now()
+    val todayMillisUTC = LocalTime.now().atDate(todayDate).toInstant(ZoneOffset.UTC).toEpochMilli()
 
     val datePickerState = rememberDatePickerState(
         initialSelectedDateMillis = if (selectedDate.isNotEmpty()) {
             dateToMillis(selectedDate)
-        } else todayMillis + 10000000, // понять, почему не ставится норм время
+        } else todayMillisUTC + (todayMillisUTC - todayMillis),
         initialDisplayMode = DisplayMode.Picker,
         yearRange = IntRange(
-            Calendar.getInstance().get(Calendar.YEAR),
-            Calendar.getInstance().get(Calendar.YEAR) + 5
+            todayDate.year,
+            todayDate.year + 5
         )
     )
 
