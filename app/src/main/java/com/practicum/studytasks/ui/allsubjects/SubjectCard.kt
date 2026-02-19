@@ -46,7 +46,8 @@ internal fun SubjectCard(
     total: Int,
     done: Int,
     percent: Int,
-    color: Color
+    color: Color,
+    onClick: () -> Unit
 ) {
     Card(
         modifier = Modifier
@@ -57,7 +58,7 @@ internal fun SubjectCard(
                 indication = ripple(
                     color = MaterialTheme.colorScheme.onBackground
                 ),
-                onClick = {}
+                onClick = onClick
             ),
         shape = RoundedCornerShape(dimensionResource(R.dimen.medium_rounded_corner)),
         colors = CardDefaults.cardColors(MaterialTheme.colorScheme.surface),
@@ -144,7 +145,8 @@ private fun SubjectCardLightPreview() {
             total = 11,
             done = 7,
             percent = 64,
-            color = MaterialTheme.colorScheme.primary
+            color = MaterialTheme.colorScheme.primary,
+            onClick = {}
         )
     }
 }
@@ -159,7 +161,8 @@ private fun SubjectCardDarkPreview() {
             total = 11,
             done = 7,
             percent = 64,
-            color = MaterialTheme.colorScheme.primary
+            color = MaterialTheme.colorScheme.primary,
+            onClick = {}
         )
     }
 }

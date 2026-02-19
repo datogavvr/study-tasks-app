@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.practicum.studytasks.ui.allsubjects.screen.AllSubjectsScreen
 import com.practicum.studytasks.ui.home.screen.HomeScreen
+import com.practicum.studytasks.ui.subject.screen.SubjectScreen
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable
@@ -36,7 +37,11 @@ fun AppNavGraph(
         }
 
         composable(Routes.ALL_SUBJECTS.name) {
-            AllSubjectsScreen()
+            AllSubjectsScreen(onSubjectClick = { navController.navigate(Routes.SUBJECT.name) })
+        }
+
+        composable(Routes.SUBJECT.name) {
+            SubjectScreen(onBack = { navController.popBackStack() })
         }
     }
 }

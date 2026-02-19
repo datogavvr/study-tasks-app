@@ -27,7 +27,9 @@ import com.practicum.studytasks.ui.theme.StudyTasksTheme
 import com.practicum.studytasks.ui.ui_components.Header
 
 @Composable
-fun AllSubjectsScreen() {
+fun AllSubjectsScreen(
+    onSubjectClick: () -> Unit = {}
+) {
     val subjects = listOf(
         listOf("Математический анализ", "Харламов Г.М.", 5, 1, Blue),
         listOf("Программирование", "Благовещенский И.Г.", 5, 2, Purple),
@@ -38,8 +40,8 @@ fun AllSubjectsScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(horizontal = dimensionResource(R.dimen.home_screen_inner_padding)),
-        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.home_screen_blocks_padding)),
+            .padding(horizontal = dimensionResource(R.dimen.screen_inner_padding)),
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.content_blocks_padding)),
         horizontalAlignment = Alignment.Start
     ) {
         Header(stringResource(R.string.subjects), "2 курс, 2 семестр") // добавить отслеживание семестра
@@ -60,7 +62,8 @@ fun AllSubjectsScreen() {
                     total = total,
                     done = done,
                     percent = percent,
-                    color = item[4] as Color
+                    color = item[4] as Color,
+                    onClick = onSubjectClick
                 )
             }
             item { Spacer(modifier = Modifier.height(dimensionResource(R.dimen.small_between_cards_padding))) }
