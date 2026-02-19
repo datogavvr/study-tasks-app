@@ -17,6 +17,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Archive
 import androidx.compose.material.icons.filled.AudioFile
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Description
@@ -218,13 +219,15 @@ private fun RenameDialog(
                 text = stringResource(R.string.save),
                 modifier = Modifier.clickable {
                     onConfirm(text + extension)
-                }
+                },
+                color = MaterialTheme.colorScheme.primary
             )
         },
         dismissButton = {
             Text(
                 text = stringResource(R.string.cancel),
-                modifier = Modifier.clickable { onDismiss() }
+                modifier = Modifier.clickable { onDismiss() },
+                color = MaterialTheme.colorScheme.error
             )
         },
         title = { Text(
@@ -312,6 +315,17 @@ private fun FilePreview(uri: Uri) {
         mime.startsWith("audio/") -> {
             PreviewIcon(
                 icon = Icons.Default.AudioFile,
+                title = mime
+            )
+        }
+
+        // archives
+        mime == "application/zip" ||
+                mime == "application/x-7z-compressed" ||
+                mime == "application/x-rar-compressed" ||
+                mime == "application/vnd.rar" -> {
+            PreviewIcon(
+                icon = Icons.Default.Archive,
                 title = mime
             )
         }
@@ -428,6 +442,18 @@ private fun AddFilesRowPreview() {
             )
             AddButton {}
         }
+    }
+}
+
+@Preview(showBackground = true, locale = "ru")
+@Composable
+private fun RenameDialogPreview() {
+    StudyTasksTheme {
+        RenameDialog(
+            fullName = "Файл.png",
+            onDismiss = {},
+            onConfirm = {}
+        )
     }
 }
 
