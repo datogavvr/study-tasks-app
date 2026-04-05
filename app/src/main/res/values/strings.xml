@@ -10,14 +10,14 @@
     <!-- Stats grid -->
     <string name="total_tasks">Total tasks</string>
     <string name="completed_tasks">Completed</string>
-    <string name="uncompleted_tasks">Uncompleted</string>
+    <string name="uncompleted_tasks">In work</string>
     <string name="total_subjects">Subjects</string>
     <!-- Progress bar -->
     <string name="progress">Progress</string>
     <string name="progress_value">Completed tasks %d%%</string>
     <!-- Upcoming tasks -->
     <string name="upcoming_tasks">Upcoming tasks</string>
-    <string name="deadline"> • %s</string>
+    <string name="deadline" translatable="false">" • %s"</string>
 
     <!-- Add task -->
     <string name="close">Close</string>

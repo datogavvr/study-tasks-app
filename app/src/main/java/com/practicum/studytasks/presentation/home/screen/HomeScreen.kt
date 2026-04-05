@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.home.screen
+package com.practicum.studytasks.presentation.home.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
@@ -11,19 +11,19 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.ui_components.Header
-import com.practicum.studytasks.ui.home.ProgressBar
-import com.practicum.studytasks.ui.home.StatsGrid
-import com.practicum.studytasks.ui.home.UpcomingTasks
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.home.ProgressBar
+import com.practicum.studytasks.presentation.home.StatsGrid
+import com.practicum.studytasks.presentation.home.UpcomingTasks
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.ui_components.Header
 
 @Composable
 fun HomeScreen() {
     LazyColumn(
         modifier = Modifier
-            .padding(horizontal = dimensionResource(R.dimen.home_screen_inner_padding))
+            .padding(horizontal = dimensionResource(R.dimen.screen_inner_padding))
             .fillMaxSize(),
-        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.home_screen_blocks_padding))
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(R.dimen.content_blocks_padding))
     ) {
         item { Header(stringResource(R.string.home), "2 курс, 2 семестр") }
         item { StatsGrid(17, 5, 12, 8) }

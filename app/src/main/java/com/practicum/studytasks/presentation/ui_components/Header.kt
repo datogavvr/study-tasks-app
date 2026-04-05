@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.ui_components
+package com.practicum.studytasks.presentation.ui_components
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -10,7 +10,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
 
 @Composable
 fun Header(

@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.home
+package com.practicum.studytasks.presentation.home
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -35,10 +35,10 @@ import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.theme.Green
-import com.practicum.studytasks.ui.theme.Peach
-import com.practicum.studytasks.ui.theme.Red
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.theme.Green
+import com.practicum.studytasks.presentation.theme.Peach
+import com.practicum.studytasks.presentation.theme.Red
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
 
 @Composable
 internal fun UpcomingTasks() {

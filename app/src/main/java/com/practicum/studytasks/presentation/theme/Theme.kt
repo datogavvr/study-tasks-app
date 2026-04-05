@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.theme
+package com.practicum.studytasks.presentation.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

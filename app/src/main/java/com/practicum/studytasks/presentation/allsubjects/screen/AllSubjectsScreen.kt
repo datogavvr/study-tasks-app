@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.allsubjects.screen
+package com.practicum.studytasks.presentation.allsubjects.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -17,14 +17,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.allsubjects.SubjectCard
-import com.practicum.studytasks.ui.theme.Blue
-import com.practicum.studytasks.ui.theme.Green
-import com.practicum.studytasks.ui.theme.Peach
-import com.practicum.studytasks.ui.theme.Purple
-import com.practicum.studytasks.ui.theme.Red
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
-import com.practicum.studytasks.ui.ui_components.Header
+import com.practicum.studytasks.presentation.allsubjects.SubjectCard
+import com.practicum.studytasks.presentation.theme.Blue
+import com.practicum.studytasks.presentation.theme.Green
+import com.practicum.studytasks.presentation.theme.Peach
+import com.practicum.studytasks.presentation.theme.Purple
+import com.practicum.studytasks.presentation.theme.Red
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.ui_components.Header
 
 @Composable
 fun AllSubjectsScreen(

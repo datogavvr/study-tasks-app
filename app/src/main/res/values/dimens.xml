@@ -11,7 +11,7 @@
     <dimen name="medium_icon_size">26dp</dimen>
     <dimen name="medium_icon_background_size">40dp</dimen>
     <dimen name="large_icon_size">40dp</dimen>
-    <dimen name="large_icon_background_size">40dp</dimen>
+    <dimen name="large_icon_background_size">56dp</dimen>
 
     <dimen name="small_icon_text_padding">6dp</dimen>
     <dimen name="medium_icon_text_padding">8dp</dimen>
@@ -26,8 +26,8 @@
     <dimen name="large_between_header_content_padding">16dp</dimen>
 
     <!-- Home screen -->
-    <dimen name="home_screen_inner_padding">8dp</dimen>
-    <dimen name="home_screen_blocks_padding">16dp</dimen>
+    <dimen name="screen_inner_padding">8dp</dimen>
+    <dimen name="content_blocks_padding">16dp</dimen>
     <dimen name="stat_card_height">90dp</dimen>
     <dimen name="stat_card_content_padding">16dp</dimen>
     <dimen name="progressbar_header_padding">8dp</dimen>
@@ -44,6 +44,7 @@
     <dimen name="subject_card_content_padding">8dp</dimen>
 
     <!-- Bottom bar -->
+    <dimen name="top_bar_height">32dp</dimen>
     <dimen name="bottom_bar_height">56dp</dimen>
     <dimen name="add_task_button_size">56dp</dimen>
 

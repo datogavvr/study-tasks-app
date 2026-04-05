@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.addtask
+package com.practicum.studytasks.presentation.addtask
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -18,7 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
 
 @Composable
 internal fun TaskParamsHeader(

@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.subject
+package com.practicum.studytasks.presentation.subject
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -26,7 +26,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
 
 @Composable
 internal fun TopBar(

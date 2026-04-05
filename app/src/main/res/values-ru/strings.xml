@@ -13,7 +13,6 @@
     <string name="progress">Прогресс выполнения</string>
     <string name="progress_value">Завершено задач %d%%</string>
     <string name="upcoming_tasks">Ближайшие задачи</string>
-    <string name="deadline">" • %s"</string>
     <string name="close">Закрыть</string>
     <string name="subject">Предмет</string>
     <string name="select_variant">Выбрать вариант</string>

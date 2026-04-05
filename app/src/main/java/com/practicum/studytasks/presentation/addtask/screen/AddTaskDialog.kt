@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.addtask.screen
+package com.practicum.studytasks.presentation.addtask.screen
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectTapGestures
@@ -51,14 +51,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.addtask.AddFilesRow
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
-import com.practicum.studytasks.ui.addtask.CustomDatePicker
-import com.practicum.studytasks.ui.addtask.NumberOfTasksRow
-import com.practicum.studytasks.ui.addtask.SwitchRow
-import com.practicum.studytasks.ui.addtask.TaskParamsHeader
-import com.practicum.studytasks.ui.addtask.CustomDropdown
-import com.practicum.studytasks.ui.ui_components.CustomTextField
+import com.practicum.studytasks.presentation.addtask.AddFilesRow
+import com.practicum.studytasks.presentation.addtask.CustomDatePicker
+import com.practicum.studytasks.presentation.addtask.CustomDropdown
+import com.practicum.studytasks.presentation.addtask.NumberOfTasksRow
+import com.practicum.studytasks.presentation.addtask.SwitchRow
+import com.practicum.studytasks.presentation.addtask.TaskParamsHeader
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.ui_components.CustomTextField
 
 @Composable
 fun AddTaskDialog(
