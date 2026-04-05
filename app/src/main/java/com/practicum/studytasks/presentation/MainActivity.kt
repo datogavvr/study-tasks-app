@@ -3,7 +3,7 @@ package com.practicum.studytasks.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.practicum.studytasks.ui.navigation.App
+import com.practicum.studytasks.presentation.navigation.App
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
