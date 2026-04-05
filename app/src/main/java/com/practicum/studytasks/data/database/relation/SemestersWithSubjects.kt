@@ -4,8 +4,8 @@ import androidx.room.Embedded
 import androidx.room.Junction
 import androidx.room.Relation
 import com.practicum.studytasks.data.database.entity.SemesterEntity
+import com.practicum.studytasks.data.database.entity.SemesterSubjectCrossRef
 import com.practicum.studytasks.data.database.entity.SubjectEntity
-import com.practicum.studytasks.data.database.entity.TaskFileCrossRef
 
 data class SemestersWithSubjects(
     @Embedded val semester: SemesterEntity,
@@ -14,7 +14,7 @@ data class SemestersWithSubjects(
         parentColumn = "id",
         entityColumn = "id",
         associateBy = Junction(
-            TaskFileCrossRef::class,
+            SemesterSubjectCrossRef::class,
             parentColumn = "semesterId",
             entityColumn = "subjectId"
         )
