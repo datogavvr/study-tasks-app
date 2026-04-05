@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.ui_components
+package com.practicum.studytasks.presentation.ui_components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -36,13 +36,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.AndroidUiModes.UI_MODE_NIGHT_YES
 import androidx.compose.ui.tooling.preview.Preview
 import com.practicum.studytasks.R
-import com.practicum.studytasks.ui.theme.Blue
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.theme.Blue
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
 
 @Composable
 fun BottomBar(
     onHomeClick: () -> Unit = {},
-//    onScheduleClick: () -> Unit,
+    onScheduleClick: () -> Unit = {},
     onAddTaskClick: () -> Unit = {},
     onSubjectsClick: () -> Unit = {},
 //    onAllTasksClick: () -> Unit
@@ -65,10 +65,12 @@ fun BottomBar(
                     BottomItem(
                         icon = Icons.Default.Home,
                         label = stringResource(R.string.home),
-                        onClick = onHomeClick)
+                        onClick = onHomeClick
+                    )
                     BottomItem(
                         icon = Icons.Default.DateRange,
-                        label = stringResource(R.string.schedule)
+                        label = stringResource(R.string.schedule),
+                        onClick = onScheduleClick
                     )
                 }
 

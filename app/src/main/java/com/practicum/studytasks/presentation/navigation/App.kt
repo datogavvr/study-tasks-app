@@ -1,4 +1,4 @@
-package com.practicum.studytasks.ui.navigation
+package com.practicum.studytasks.presentation.navigation
 
 import android.annotation.SuppressLint
 import androidx.compose.material3.MaterialTheme
@@ -9,9 +9,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.navigation.compose.rememberNavController
-import com.practicum.studytasks.ui.theme.StudyTasksTheme
-import com.practicum.studytasks.ui.addtask.screen.AddTaskDialog
-import com.practicum.studytasks.ui.ui_components.BottomBar
+import com.practicum.studytasks.presentation.addtask.screen.AddTaskDialog
+import com.practicum.studytasks.presentation.theme.StudyTasksTheme
+import com.practicum.studytasks.presentation.ui_components.BottomBar
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -23,6 +23,7 @@ fun App() {
         Scaffold(
             bottomBar = { BottomBar(
                 onHomeClick = { navController.navigate(Routes.HOME.name) },
+                onScheduleClick = { navController.navigate(Routes.SCHEDULE.name) },
                 onAddTaskClick = { showAddTaskDialog = true },
                 onSubjectsClick = { navController.navigate(Routes.ALL_SUBJECTS.name) }
             ) },
